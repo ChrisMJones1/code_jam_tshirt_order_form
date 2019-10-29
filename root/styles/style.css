@@ -19,6 +19,12 @@ html{
     max-width: 1200px;
     margin: 0 auto;
 }
+.hidden {
+  position: absolute;
+  left: -1200000000px;
+  height: 1px;
+  width: 1px;
+}
 #header{
     background-color: grey;
     color: white;
@@ -71,6 +77,9 @@ html{
 }
 #user_form div {
   margin: 1em;
+}
+#colour_selection img {
+  width: 50px;
 }
 .input_field {
   float: right;
