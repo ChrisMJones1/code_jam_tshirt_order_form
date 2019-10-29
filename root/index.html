@@ -10,25 +10,64 @@
 </head>
 <body>
     <header>
-        <!-- CODE JAM REQUIREMENTS -->
-        <!--
-        	The code Jam requirements are for you to build a website!
-        
-        	- please see source/design.png for the "look" of the website
-        	- please see root/images/ for the images that are provided to you
-        	- please go to this youtube link to see what an example finished product would look like
-        	
-        	https://www.youtube.com/watch?v=iXIfw2V0RC0
-        
-        
-        
-        -->
+        <img src="images/codejamlogo.jpg" alt="logo of jam" />
+        <h2>HTTP Week 8</h2>
+        <ul>
+            <li>Home</li>
+            <li>Merchandise</li>
+        </ul>
     </header>
     <main>
-    	Code Jam! Open "root/index.html", "root/styles/style.css" to get started!
+        <h1>Merchandise</h1>
+        <h2>Samll purple crew cut T-shirt</h2>
+        <img src="images/tshirt-purple.png" alt="selected tshirt"/>
+        <form method="post" action="#">
+            <h2>Your Order:</h2>
+            <h3>select Colour:</h3>
+            <input type="radio" />
+            <label>white</label>
+            <input type= "radio"/>
+            <label>black</label>
+            <input type="radio" />
+            <label>red</label>
+            <input type="radio" />
+            <label>blue</label>
+            <input type="radio" />
+            <label>green</label>
+            <input type="radio" />
+            <label>purple</label>
+            <label>choose size</label>
+            <select>
+                <option>xsmall</option>
+                <option>small</option>
+                <option>medium</option>
+                <option>large</option>
+                <option>xlarge</option>
+            </select>
+            <label>choose style</label>
+            <select>
+                <option>plain</option>
+                <option>crew cut(+2$)</option>
+                <option>vneck(5$)</option>
+                <option>baseball(1$)</option>
+            </select>
+            <label>name</label>
+            <input type="text"/>
+            <label>address</label>
+            <input type="text"/>
+            <fieldset>
+                <legend>delivery type</legend>
+                <input type="radio" />
+                <label>normal</label>
+                <input type="radio" />
+                <label>express(+10.00$)</label>
+            </fieldset>
+            <button type="submit">order</button>
+        </form>
+        
     </main>
     <footer>
-        
+        <div>THis website is for educational purposes only</div>
     </footer>
 </body>
 </html>
