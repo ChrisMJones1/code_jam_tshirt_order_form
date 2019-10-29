@@ -9,65 +9,89 @@
     <script src="scripts/validate.js"></script>
 </head>
 <body>
-    <header>
-        <img src="images/codejamlogo.jpg" alt="logo of jam" />
-        <h2>HTTP Week 8</h2>
-        <ul>
-            <li>Home</li>
-            <li>Merchandise</li>
-        </ul>
-    </header>
-    <main>
-        <h1>Merchandise</h1>
-        <h2>Samll purple crew cut T-shirt</h2>
-        <img src="images/tshirt-purple.png" alt="selected tshirt"/>
-        <form method="post" action="#">
-            <h2>Your Order:</h2>
-            <h3>select Colour:</h3>
-            <input type="radio" />
-            <label>white</label>
-            <input type= "radio"/>
-            <label>black</label>
-            <input type="radio" />
-            <label>red</label>
-            <input type="radio" />
-            <label>blue</label>
-            <input type="radio" />
-            <label>green</label>
-            <input type="radio" />
-            <label>purple</label>
-            <label>choose size</label>
-            <select>
-                <option>xsmall</option>
-                <option>small</option>
-                <option>medium</option>
-                <option>large</option>
-                <option>xlarge</option>
-            </select>
-            <label>choose style</label>
-            <select>
-                <option>plain</option>
-                <option>crew cut(+2$)</option>
-                <option>vneck(5$)</option>
-                <option>baseball(1$)</option>
-            </select>
-            <label>name</label>
-            <input type="text"/>
-            <label>address</label>
-            <input type="text"/>
-            <fieldset>
-                <legend>delivery type</legend>
-                <input type="radio" />
-                <label>normal</label>
-                <input type="radio" />
-                <label>express(+10.00$)</label>
-            </fieldset>
-            <button type="submit">order</button>
-        </form>
-        
-    </main>
-    <footer>
-        <div>THis website is for educational purposes only</div>
-    </footer>
+    <div class="page_container">
+        <header id="header">
+            <section id="header_logo">
+                <img src="images/codejamlogo.jpg" alt="logo of jam" id="logo_image"/>
+                <h2>HTTP Week 8</h2>
+            </section>
+            <nav id="navigation">
+                <ul>
+                    <li>Home</li>
+                    <li>Merchandise</li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <h1>Merchandise</h1>
+            <div id="preview">
+                <h2>Samll purple crew cut T-shirt</h2>
+                <img src="images/tshirt-purple.png" alt="selected tshirt"/>
+            </div>
+            <div id="user_form">
+                <form method="post" action="#">
+                    <h2>Your Order:</h2>
+                    <div>
+                        <h3>select Colour:</h3>
+                        <input type="radio" id="white_tshirt" name="tshirt_colour" value="white" />
+                        <label for="white_tshirt">white</label>
+                        <input type= "radio" id="black_tshirt" name="tshirt_colour" value="black"/>
+                        <label for="black_tshirt">black</label>
+                        <input type= "radio" id="red_tshirt" name="tshirt_colour" value="red"/>
+                        <label for="red_tshirt">red</label>
+                        <input type= "radio" id="blue_tshirt" name="tshirt_colour" value="blue"/>
+                        <label for="blue_tshirt">blue</label>
+                        <input type= "radio" id="green_tshirt" name="tshirt_colour" value="green"/>
+                        <label for="green_tshirt">green</label>
+                        <input type= "radio" id="purple_tshirt" name="tshirt_colour" value="purple"/>
+                        <label for="purple_tshirt">purple</label>
+                    </div>
+                    <div>
+                        <label>choose size</label>
+                        <select id="tshirt_size" name=thsirt_size>
+                            <option value="xsmall">xsmall</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                            <option value="xlarge">xlarge</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>choose style</label>
+                        <select id="tshirt_style" name="tshirt_style">
+                            <option value="plain">plain</option>
+                            <option value="crew_cut">crew cut(+2$)</option>
+                            <option value="vneck">vneck(5$)</option>
+                            <option value="baseball">baseball(1$)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="order_name">name</label>
+                        <input type="text" id="order_name" placeholder="eg:John Smith"/>
+                    </div>
+                    <div>
+                        <label for="order_address">address</label>
+                        <input type="text" id="order_address" placeholder="mailing address"/>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>delivery type</legend>
+                            <input type="radio" id="delivery_normal" name="delivery" value="normal"/>
+                            <label for="delivery_normal">normal</label>
+                            <input type="radio" id="delivery_express" name="delivery" value="express"/>
+                            <label for="delivery_express">express(+10.00$)</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit" name="submit">order</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer id="footer">
+            <div id="footer_text">THis website is for educational purposes only</div>
+        </footer>
+    </div>
 </body>
 </html>
