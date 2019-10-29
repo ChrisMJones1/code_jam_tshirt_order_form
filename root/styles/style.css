@@ -6,10 +6,74 @@
 	https://www.w3schools.com/css/
 	
 */
-body{color:#fefefe;}
+body{color:#000000;}
 
 
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+.page_container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    background-color: grey;
+    color: white;
+}
+#logo_image{
+    max-width: 150px;
+    
+}
+#navigation{
+    position: absolute;
+    right: 100px;
+    top: 160px;
+}
+#header_logo{
+    display: inline-block;
+}
+#header_logo h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#navigation ul{
+    display: inline-block;
+    
+}
+#navigation li{
+    display: inline-block;
+    padding-right: 10px;
+}
 
+#tShirt_Preview_Name{
+    float: right;
+    width: 100%;
+}
+#tShirt_Preview_Image{
+    max-width: 300px;
+    float: right;
+}
+#preview{
+    float: left;
+    width: 48%;
+    margin-right: 1%;
+}
+#user_form{
+    float: right;
+    width: 48%;
+    margin-left: 1%;
+}
+#footer{
+    clear: both;
+    background-color: black;
+    color: white;
+    padding: 5em;
+}
 /*
 	Attributes below
 	----------------
