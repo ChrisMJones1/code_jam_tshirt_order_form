@@ -52,11 +52,12 @@ html{
 
 #tShirt_Preview_Name{
     float: right;
-    width: 100%;
+    margin-right: 5em;
 }
 #tShirt_Preview_Image{
     max-width: 300px;
     float: right;
+    clear: right;
 }
 #preview{
     float: left;
@@ -67,6 +68,9 @@ html{
     float: right;
     width: 48%;
     margin-left: 1%;
+}
+#submit_Button{
+    clear: both;
 }
 #footer{
     clear: both;
