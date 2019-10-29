@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Merchandise</title>
-    <link href="/styles/bittsreset.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
     <script src="scripts/validate.js"></script>
 </head>
@@ -28,8 +28,9 @@
                 <h2 id="tShirt_Preview_Name" >Small purple crew cut T-shirt</h2>
                 <img src="images/tshirt-purple.png" id="tShirt_Preview_Image" alt="selected tshirt"/>
             </div>
-            <div id="user_form">
-                <form method="post" action="#">
+            
+            <form method="post" action="#">
+              <div id="user_form">
                     <h2>Your Order:</h2>
                     <div>
                         <h3>select Colour:</h3>
@@ -47,8 +48,8 @@
                         <label for="purple_tshirt">purple</label>
                     </div>
                     <div>
-                        <label>choose size</label>
-                        <select id="tshirt_size" name=thsirt_size>
+                        <label>choose size:</label>
+                        <select id="tshirt_size" name="thsirt_size" class="input_field">
                             <option value="xsmall">xsmall</option>
                             <option value="small">small</option>
                             <option value="medium">medium</option>
@@ -57,8 +58,8 @@
                         </select>
                     </div>
                     <div>
-                        <label>choose style</label>
-                        <select id="tshirt_style" name="tshirt_style">
+                        <label>choose style:</label>
+                        <select id="tshirt_style" name="tshirt_style" class="input_field">
                             <option value="plain">plain</option>
                             <option value="crew_cut">crew cut(+2$)</option>
                             <option value="vneck">vneck(5$)</option>
@@ -67,11 +68,11 @@
                     </div>
                     <div>
                         <label for="order_name">name</label>
-                        <input type="text" id="order_name" placeholder="eg:John Smith"/>
+                        <input type="text" id="order_name" placeholder="eg:John Smith" class="input_field"/>
                     </div>
                     <div>
                         <label for="order_address">address</label>
-                        <input type="text" id="order_address" placeholder="mailing address"/>
+                        <input type="text" id="order_address" placeholder="mailing address" class="float_full"/>
                     </div>
                     <div>
                         <fieldset>
@@ -82,11 +83,12 @@
                             <label for="delivery_express">express(+10.00$)</label>
                         </fieldset>
                     </div>
-                    <div>
-                        <button type="submit" id="submit" name="submit">order</button>
-                    </div>
+                </div>
+                  <div class="submit_button">
+                    <button type="submit" id="submit" name="submit">order</button>
+                  </div>
                 </form>
-            </div>
+            
 
         </main>
         <footer id="footer">
