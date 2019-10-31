@@ -23,6 +23,7 @@ function pageLoaded() {
 	var message_tshirt_preview_colour = document.getElementById("tshirt_preview_colour");
 	var message_tshirt_preview_style = document.getElementById("tshirt_preview_style");
 	var image_tShirt_Preview = document.getElementById("tShirt_Preview_Image");
+	image_tShirt_Preview.onmouseover = previewTshirtHover;
 	
 	//tshirt colour radio button
 	var radioButton_white_tshirt = document.getElementById("white_tshirt");
@@ -49,6 +50,10 @@ function pageLoaded() {
 	
 	//selection variable (hover/selected image)
 	var image_selection_highlight = document.getElementById("selection_highlight");
+	
+	function previewTshirtHover() {
+		image_selection_highlight.style.left = image_tShirt_Preview.style.left + 'px';
+	}
 	
 	function tshirtColourChange() {
 		var colourValue = document.querySelector('input[name="tshirt_colour"]:checked').value;
