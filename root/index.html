@@ -12,14 +12,14 @@
     <div class="page_container">
         <header id="header">
             <section id="header_logo">
-                <a href="/">
+                <a href="#">
                   <img src="images/codejamlogo.jpg" alt="logo of jam" id="logo_image"/>
                   <h2>HTTP Week 8</h2>
                 </a>
             </section>
             <nav id="navigation">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Merchandise</a></li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
                     <div id="colour_selection">
                         <h3>select Colour:</h3>
                         
-                        <input type="radio" id="white_tshirt" name="tshirt_colour" value="white" class="hidden" />
+                        <input type="radio" id="white_tshirt" name="tshirt_colour" value="white" class="hidden" required />
                         <label for="white_tshirt"><img src="images/white_square.jpg" alt="white colour option"></label>
                         <input type= "radio" id="black_tshirt" name="tshirt_colour" value="black" class="hidden"/>
                         <label for="black_tshirt"><img src="images/black_square.jpg" /></label>
@@ -71,16 +71,16 @@
                     </div>
                     <div>
                         <label for="order_name">name</label>
-                        <input type="text" id="order_name" placeholder="eg:John Smith" class="input_field"/>
+                        <input type="text" id="order_name" placeholder="eg:John Smith" class="input_field" required />
                     </div>
                     <div>
                         <label for="order_address">address</label>
-                        <input type="text" id="order_address" placeholder="mailing address" class="float_full"/>
+                        <input type="text" id="order_address" placeholder="mailing address" class="float_full" required />
                     </div>
                     <div>
                         <fieldset>
                             <legend>delivery type</legend>
-                            <input type="radio" id="delivery_normal" name="delivery" value="normal"/>
+                            <input type="radio" id="delivery_normal" name="delivery" value="normal" required />
                             <label for="delivery_normal">normal</label>
                             <input type="radio" id="delivery_express" name="delivery" value="express"/>
                             <label for="delivery_express">express(+10.00$)</label>
