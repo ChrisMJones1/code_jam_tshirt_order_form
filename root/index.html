@@ -9,92 +9,101 @@
     <script src="scripts/validate.js"></script>
 </head>
 <body>
-    <div class="page_container">
-        <header id="header">
-            <section id="header_logo">
-                <a href="#">
-                  <img src="images/codejamlogo.jpg" alt="logo of jam" id="logo_image"/>
-                  <h2>HTTP Week 8</h2>
-                </a>
-            </section>
-            <nav id="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Merchandise</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="main">
-            <h1>Merchandise</h1>
-            <div id="preview">
-                <h2 id="tShirt_Preview_Name" >Small purple crew cut T-shirt</h2>
-                <img src="images/tshirt-purple.png" id="tShirt_Preview_Image" alt="selected tshirt"/>
+      <header id="header">
+        <div class="page_container">
+          <section id="header_logo">
+              <a href="#">
+                <img src="images/codejamlogo.jpg" alt="logo of jam" id="logo_image"/>
+                <h2>HTTP Week 8</h2>
+              </a>
+          </section>
+          <nav id="navigation">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Merchandise</a></li>
+              </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main">
+        <div class="page_container">
+          <h1 id="main_title">Merchandise</h1>
+          <div id="preview">
+            <div id="tShirt_Preview_Name">
+              <span id="tshirt_preview_size">xsmall</span> 
+              <span id="tshirt_preview_colour">white</span> 
+              <span id="tshirt_preview_style">plain</span> 
+              T-shirt
             </div>
-            
-            <form method="post" action="#">
-              <div id="user_form">
-                    <h2>Your Order:</h2>
-                    <div id="colour_selection">
-                        <h3>select Colour:</h3>
-                        
-                        <input type="radio" id="white_tshirt" name="tshirt_colour" value="white" class="hidden" required />
-                        <label for="white_tshirt"><img src="images/white_square.jpg" alt="white colour option"></label>
-                        <input type= "radio" id="black_tshirt" name="tshirt_colour" value="black" class="hidden"/>
-                        <label for="black_tshirt"><img src="images/black_square.jpg" /></label>
-                        <input type= "radio" id="red_tshirt" name="tshirt_colour" value="red" class="hidden"/>
-                        <label for="red_tshirt"><img src="images/red_square.jpg" alt="red colour option" /></label>
-                        <input type= "radio" id="blue_tshirt" name="tshirt_colour" value="blue" class="hidden"/>
-                        <label for="blue_tshirt"><img src="images/blue_square.png" alt="blue colour option"/></label>
-                        <input type= "radio" id="green_tshirt" name="tshirt_colour" value="green" class="hidden"/>
-                        <label for="green_tshirt"><img src="images/green_square.jpg" alt="green colour option" /></label>
-                        <input type= "radio" id="purple_tshirt" name="tshirt_colour" value="purple" class="hidden"/>
-                        <label for="purple_tshirt"><img src="images/purple_square.jpg" alt="purple colour option" /></label>
-                    </div>
-                    <div>
-                        <label>choose size:</label>
-                        <select id="tshirt_size" name="thsirt_size" class="input_field">
-                            <option value="xsmall">xsmall</option>
-                            <option value="small">small</option>
-                            <option value="medium">medium</option>
-                            <option value="large">large</option>
-                            <option value="xlarge">xlarge</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>choose style:</label>
-                        <select id="tshirt_style" name="tshirt_style" class="input_field">
-                            <option value="plain">plain</option>
-                            <option value="crew_cut">crew cut(+2$)</option>
-                            <option value="vneck">vneck(5$)</option>
-                            <option value="baseball">baseball(1$)</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="order_name">name</label>
-                        <input type="text" id="order_name" placeholder="eg:John Smith" class="input_field" required />
-                    </div>
-                    <div>
-                        <label for="order_address">address</label>
-                        <input type="text" id="order_address" placeholder="mailing address" class="float_full" required />
-                    </div>
-                    <div>
-                        <fieldset>
-                            <legend>delivery type</legend>
-                            <input type="radio" id="delivery_normal" name="delivery" value="normal" required />
-                            <label for="delivery_normal">normal</label>
-                            <input type="radio" id="delivery_express" name="delivery" value="express"/>
-                            <label for="delivery_express">express(+10.00$)</label>
-                        </fieldset>
-                    </div>
-                </div>
-                  <div class="submit_button">
-                    <button type="submit" id="submit" name="submit">order</button>
+              <img src="images/tshirt-white.png" id="tShirt_Preview_Image" alt="selected tshirt"/>
+          </div>
+
+          <form method="post" action="#">
+            <div id="user_form">
+                  <h2>Your Order:</h2>
+                  <div id="colour_selection">
+                      <h3>select Colour:</h3>
+
+                      <input type="radio" id="white_tshirt" name="tshirt_colour" value="white" class="hidden" required />
+                      <label for="white_tshirt"><img src="images/white_square.jpg" alt="white colour option"></label>
+                      <input type= "radio" id="black_tshirt" name="tshirt_colour" value="black" class="hidden"/>
+                      <label for="black_tshirt"><img src="images/black_square.jpg" /></label>
+                      <input type= "radio" id="red_tshirt" name="tshirt_colour" value="red" class="hidden"/>
+                      <label for="red_tshirt"><img src="images/red_square.jpg" alt="red colour option" /></label>
+                      <input type= "radio" id="blue_tshirt" name="tshirt_colour" value="blue" class="hidden"/>
+                      <label for="blue_tshirt"><img src="images/blue_square.png" alt="blue colour option"/></label>
+                      <input type= "radio" id="green_tshirt" name="tshirt_colour" value="green" class="hidden"/>
+                      <label for="green_tshirt"><img src="images/green_square.jpg" alt="green colour option" /></label>
+                      <input type= "radio" id="purple_tshirt" name="tshirt_colour" value="purple" class="hidden"/>
+                      <label for="purple_tshirt"><img src="images/purple_square.jpg" alt="purple colour option" /></label>
                   </div>
-                </form>
-        </main>
-        <footer id="footer">
-            <div id="footer_text">This website is for educational purposes only</div>
-        </footer>
-    </div>
+                  <div>
+                      <label>choose size:</label>
+                      <select id="tshirt_size" name="thsirt_size" class="input_field">
+                          <option value="xsmall">xsmall</option>
+                          <option value="small">small</option>
+                          <option value="medium">medium</option>
+                          <option value="large">large</option>
+                          <option value="xlarge">xlarge</option>
+                      </select>
+                  </div>
+                  <div>
+                      <label>choose style:</label>
+                      <select id="tshirt_style" name="tshirt_style" class="input_field">
+                          <option value="plain">plain</option>
+                          <option value="crew_cut">crew cut(+2$)</option>
+                          <option value="vneck">vneck(5$)</option>
+                          <option value="baseball">baseball(1$)</option>
+                      </select>
+                  </div>
+                  <div>
+                      <label for="order_name">name</label>
+                      <input type="text" id="order_name" placeholder="eg:John Smith" class="input_field" required />
+                  </div>
+                  <div>
+                      <label for="order_address">address</label>
+                      <input type="text" id="order_address" placeholder="mailing address" class="float_full" required />
+                  </div>
+                  <div>
+                      <fieldset>
+                          <legend>delivery type</legend>
+                          <input type="radio" id="delivery_normal" name="delivery" value="normal" required />
+                          <label for="delivery_normal">normal</label>
+                          <input type="radio" id="delivery_express" name="delivery" value="express"/>
+                          <label for="delivery_express">express(+10.00$)</label>
+                      </fieldset>
+                  </div>
+              </div>
+                <div class="submit_button">
+                  <button type="submit" id="submit" name="submit">order</button>
+                </div>
+              </form>
+          </div>
+      </main>
+      <footer id="footer">
+        <div class="page_container">
+          <div id="footer_text">This website is for educational purposes only</div>
+        </div>
+      </footer>
 </body>
 </html>
