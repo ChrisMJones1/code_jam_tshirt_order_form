@@ -26,33 +26,35 @@ html{
   width: 30px;
   height: 30px;
   background-color: #000;
-}
-.colour_option_box.black {
-  background-color: #000;
+  border: 1px solid #000;
 }
 #label_red_tshirt {
   display: inline-block;
   width: 30px;
   height: 30px;
   background-color: #F00;
+  border: 1px solid #000;
 }
 #label_green_tshirt {
   display: inline-block;
   width: 30px;
   height: 30px;
   background-color: #0F0;
+  border: 1px solid #000;
 }
 #label_blue_tshirt {
   display: inline-block;
   width: 30px;
   height: 30px;
   background-color: #00F;
+  border: 1px solid #000;
 }
 #label_purple_tshirt {
   display: inline-block;
   width: 30px;
   height: 30px;
   background-color: #F0F;
+  border: 1px solid #000;
 }
 .page_container{
     max-width: 1200px;
