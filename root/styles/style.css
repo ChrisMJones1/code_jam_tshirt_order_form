@@ -8,12 +8,51 @@
 */
 body{color:#000000;}
 
-
 html{
     box-sizing: border-box;
 }
 *,*::before, *::after{
     box-sizing: inherit;
+}
+#label_white_tshirt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #FFF;
+  border: 1px solid #000;
+}
+#label_black_tshirt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+}
+.colour_option_box.black {
+  background-color: #000;
+}
+#label_red_tshirt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #F00;
+}
+#label_green_tshirt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #0F0;
+}
+#label_blue_tshirt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #00F;
+}
+#label_purple_tshirt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #F0F;
 }
 .page_container{
     max-width: 1200px;
@@ -93,6 +132,12 @@ a:hover {
 #colour_selection img {
   width: 50px;
 }
+/*
+.colour_option_box {
+  width: 30px;
+  height: 30px;
+}
+*/
 #selection_highlight {
   position: absolute;
   left: -120000px;
