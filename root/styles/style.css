@@ -26,10 +26,6 @@ html{
   height: 1px;
   width: 1px;
 }
-.selection_highlight {
-  position: absolute;
-  left: -120000px;
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -96,6 +92,10 @@ a:hover {
 }
 #colour_selection img {
   width: 50px;
+}
+#selection_highlight {
+  position: absolute;
+  left: -120000px;
 }
 .input_field {
   float: right;

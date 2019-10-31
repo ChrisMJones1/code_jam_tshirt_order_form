@@ -38,30 +38,47 @@ function pageLoaded() {
 	var radioButton_black_tshirt = document.getElementById("black_tshirt");
 	radioButton_black_tshirt.onclick = black_tshirt_clicked;
 	
+	//tshirt colour image
+	var label_white_tshirt = document.getElementById("label_white_tshirt");
+	var label_red_tshirt = document.getElementById("label_red_tshirt");
+	var label_purple_tshirt = document.getElementById("label_purple_tshirt");
+	var label_green_tshirt = document.getElementById("label_green_tshirt");
+	var label_blue_tshirt = document.getElementById("label_blue_tshirt");
+	var label_black_tshirt = document.getElementById("label_black_tshirt");
+	
+	//selection variable (hover/selected image)
+	var image_selection_highlight = document.getElementById("selection_highlight");
+	
 	//functions for tshirt colour change
 	function white_tshirt_clicked() {
 		image_tShirt_Preview.src = image_tShirt_white;
 		message_tshirt_preview_colour.innerHTML = "white";
+		image_selection_highlight.style.left = label_white_tshirt.offsetLeft + 'px';
 	}
 	function red_tshirt_clicked() {
 		image_tShirt_Preview.src = image_tShirt_red;
 		message_tshirt_preview_colour.innerHTML = "red";		
+		image_selection_highlight.style.left = label_red_tshirt.offsetLeft + 'px';
 	}
 	function purple_tshirt_clicked() {
 		image_tShirt_Preview.src = image_tShirt_purple;	
 		message_tshirt_preview_colour.innerHTML = "purple";		
+		image_selection_highlight.style.left = label_purple_tshirt.offsetLeft + 'px';
 	}
 	function green_tshirt_clicked() {
 		image_tShirt_Preview.src = image_tShirt_green;	
 		message_tshirt_preview_colour.innerHTML = "green";		
+		image_selection_highlight.style.left = label_green_tshirt.offsetLeft + 'px';
 	}
 	function blue_tshirt_clicked() {
 		image_tShirt_Preview.src = image_tShirt_blue;	
 		message_tshirt_preview_colour.innerHTML = "blue";		
+		image_selection_highlight.style.left = label_blue_tshirt.offsetLeft + 'px';
 	}
 	function black_tshirt_clicked() {
 		image_tShirt_Preview.src = image_tShirt_black;	
 		message_tshirt_preview_colour.innerHTML = "black";	
+		image_selection_highlight.style.left = label_black_tshirt.offsetLeft + 'px';
 	}
 	
 
