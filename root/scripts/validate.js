@@ -26,17 +26,18 @@ function pageLoaded() {
 	
 	//tshirt colour radio button
 	var radioButton_white_tshirt = document.getElementById("white_tshirt");
-	radioButton_white_tshirt.onclick = white_tshirt_clicked;
+	radioButton_white_tshirt.onclick = tshirtColourChange;
 	var radioButton_red_tshirt = document.getElementById("red_tshirt");
-	radioButton_red_tshirt.onclick = red_tshirt_clicked;
+	radioButton_red_tshirt.onclick = tshirtColourChange;	
 	var radioButton_purple_tshirt = document.getElementById("purple_tshirt");
-	radioButton_purple_tshirt.onclick = purple_tshirt_clicked;
+	radioButton_purple_tshirt.onclick = tshirtColourChange;
 	var radioButton_green_tshirt = document.getElementById("green_tshirt");
-	radioButton_green_tshirt.onclick = green_tshirt_clicked;
+	radioButton_green_tshirt.onclick = tshirtColourChange;
 	var radioButton_blue_tshirt = document.getElementById("blue_tshirt");
-	radioButton_blue_tshirt.onclick = blue_tshirt_clicked;
+	radioButton_blue_tshirt.onclick = tshirtColourChange;
 	var radioButton_black_tshirt = document.getElementById("black_tshirt");
-	radioButton_black_tshirt.onclick = black_tshirt_clicked;
+	radioButton_black_tshirt.onclick = tshirtColourChange;
+		
 	
 	//tshirt colour image
 	var label_white_tshirt = document.getElementById("label_white_tshirt");
@@ -49,36 +50,10 @@ function pageLoaded() {
 	//selection variable (hover/selected image)
 	var image_selection_highlight = document.getElementById("selection_highlight");
 	
-	//functions for tshirt colour change
-	function white_tshirt_clicked() {
-		image_tShirt_Preview.src = image_tShirt_white;
-		message_tshirt_preview_colour.innerHTML = "white";
-		image_selection_highlight.style.left = label_white_tshirt.offsetLeft + 'px';
-	}
-	function red_tshirt_clicked() {
-		image_tShirt_Preview.src = image_tShirt_red;
-		message_tshirt_preview_colour.innerHTML = "red";		
-		image_selection_highlight.style.left = label_red_tshirt.offsetLeft + 'px';
-	}
-	function purple_tshirt_clicked() {
-		image_tShirt_Preview.src = image_tShirt_purple;	
-		message_tshirt_preview_colour.innerHTML = "purple";		
-		image_selection_highlight.style.left = label_purple_tshirt.offsetLeft + 'px';
-	}
-	function green_tshirt_clicked() {
-		image_tShirt_Preview.src = image_tShirt_green;	
-		message_tshirt_preview_colour.innerHTML = "green";		
-		image_selection_highlight.style.left = label_green_tshirt.offsetLeft + 'px';
-	}
-	function blue_tshirt_clicked() {
-		image_tShirt_Preview.src = image_tShirt_blue;	
-		message_tshirt_preview_colour.innerHTML = "blue";		
-		image_selection_highlight.style.left = label_blue_tshirt.offsetLeft + 'px';
-	}
-	function black_tshirt_clicked() {
-		image_tShirt_Preview.src = image_tShirt_black;	
-		message_tshirt_preview_colour.innerHTML = "black";	
-		image_selection_highlight.style.left = label_black_tshirt.offsetLeft + 'px';
+	function tshirtColourChange() {
+		var colourValue = document.querySelector('input[name="tshirt_colour"]:checked').value;
+		image_tShirt_Preview.src = "images/tshirt-" + colourValue + ".png";
+		message_tshirt_preview_colour.innerHTML = colourValue;	
 	}
   
   //change the size selections
@@ -96,8 +71,7 @@ function pageLoaded() {
     message_tshirt_preview_style.innerHTML = style_selection.value;
     
   }
-  
-  
+    
   size_selection.addEventListener("change", sizeChange);
   
   
