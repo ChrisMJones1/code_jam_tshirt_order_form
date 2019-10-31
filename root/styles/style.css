@@ -22,9 +22,13 @@ html{
 }
 .hidden {
   position: absolute;
-  left: -1200000000px;
+  left: -120000px;
   height: 1px;
   width: 1px;
+}
+.selection_highlight {
+  position: absolute;
+  left: -120000px;
 }
 a {
   text-decoration: none;
