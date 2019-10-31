@@ -6,10 +6,16 @@
 	https://www.w3schools.com/css/
 	
 */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
+
 body{color:#000000;}
 
 html{
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
 }
 *,*::before, *::after{
     box-sizing: inherit;
@@ -59,7 +65,7 @@ html{
 .page_container{
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
+    position: relative; 
 }
 .hidden {
   position: absolute;
@@ -82,6 +88,12 @@ a:hover {
 }
 #header_logo{
     display: inline-block;
+}
+#header_logo h2 {
+  text-align: center;
+/*  font-weight: bold;*/
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 #logo_image{
     max-width: 150px;
@@ -123,6 +135,13 @@ a:hover {
     width: 48%;
     margin-right: 1%;
 }
+/*
+#preview{background:red;}
+
+@media screen and (max-width: 700px) {
+  #preview{background:none;}
+}
+*/
 #user_form {
     float: right;
     width: 48%;
@@ -165,7 +184,7 @@ a:hover {
     clear: both;
     background-color: black;
     color: white;
-    padding: 5em;
+    padding: 2em;
 }
 /*
 	Attributes below
@@ -180,3 +199,16 @@ a:hover {
     
     Code Challenge Developed by Christine Bittle
 */
+@media screen and (max-width: 700px) {
+  .page_container {
+    width: 100%;
+    
+  }
+	#preview, #user_form, #preview img, #tShirt_Preview_Name {
+      
+      width:100%; 
+      margin: 2em 0;
+      float:none; 
+      clear: both;
+  }
+}
