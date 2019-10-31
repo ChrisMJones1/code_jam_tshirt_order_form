@@ -35,20 +35,23 @@ a:hover {
 #header{
     background-color: grey;
     color: white;
+    width: 100%;
+    margin-bottom: 2em;
+}
+#header_logo{
+    display: inline-block;
 }
 #logo_image{
     max-width: 150px;
     
 }
 #navigation{
-    position: absolute;
-    right: 100px;
-    top: 160px;
-}
-#header_logo{
+    position: relative;
+    right: 0;
+    bottom: 0.5em;
     display: inline-block;
 }
-#header_logo h2{
+#tShirt_Preview_Name{
     font-family: sans-serif;
     font-weight: bold;
     margin-left: 30px;
@@ -62,7 +65,9 @@ a:hover {
     display: inline-block;
     padding-right: 10px;
 }
-
+#main_title {
+  font-size: 2em;
+}
 #tShirt_Preview_Name{
     float: right;
     margin-right: 5em;
