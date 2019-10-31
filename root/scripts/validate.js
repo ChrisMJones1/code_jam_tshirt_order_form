@@ -80,6 +80,29 @@ function pageLoaded() {
 		message_tshirt_preview_colour.innerHTML = "black";	
 		image_selection_highlight.style.left = label_black_tshirt.offsetLeft + 'px';
 	}
-	
+  
+  //change the size selections
+  var size_selection = document.getElementById("tshirt_size");
+  function sizeChange() {
+    
+    message_tshirt_preview_size.innerHTML = size_selection.value;
+    
+  }
+  
+  //change the style selections
+  var style_selection = document.getElementById("tshirt_style");
+  function styleChange() {
+    
+    message_tshirt_preview_style.innerHTML = style_selection.value;
+    
+  }
+  
+  
+  size_selection.addEventListener("change", sizeChange);
+  
+  
+  style_selection.addEventListener("change", styleChange);
+  
+  
 
 }
