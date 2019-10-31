@@ -24,6 +24,7 @@ function pageLoaded() {
 	var message_tshirt_preview_style = document.getElementById("tshirt_preview_style");
 	var image_tShirt_Preview = document.getElementById("tShirt_Preview_Image");
 	image_tShirt_Preview.onmouseover = previewTshirtHover;
+	image_tShirt_Preview.onmouseleave = previewTshirtHoverOff;
 	
 	//tshirt colour radio button
 	var radioButton_white_tshirt = document.getElementById("white_tshirt");
@@ -52,7 +53,26 @@ function pageLoaded() {
 	var image_selection_highlight = document.getElementById("selection_highlight");
 	
 	function previewTshirtHover() {
-		image_selection_highlight.style.left = image_tShirt_Preview.style.left + 'px';
+		//image_selection_highlight.style.left = image_tShirt_Preview.style.left + 'px';
+		//image_selection_highlight.style.width = image_tShirt_Preview.style.width + 'px';
+
+		image_selection_highlight.style.width = image_tShirt_Preview.offsetWidth + 'px';
+	
+		//Set the x position
+		image_selection_highlight.style.left = image_tShirt_Preview.offsetLeft 
+		+ (image_tShirt_Preview.offsetWidth / 2)
+		- (image_selection_highlight.offsetWidth / 2)
+		+ 'px';
+		//Set the y position
+		image_selection_highlight.style.top = image_tShirt_Preview.offsetTop 
+		+ (image_tShirt_Preview.offsetHeight / 2)
+		- (image_selection_highlight.offsetHeight / 2)
+		+ 'px';
+		
+	}
+	
+	function previewTshirtHoverOff() {
+		image_selection_highlight.style.left = '-1200000px';
 	}
 	
 	function tshirtColourChange() {
